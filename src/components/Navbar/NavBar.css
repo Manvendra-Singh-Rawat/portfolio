@@ -1,0 +1,136 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  padding: 0 40px;
+
+  font-family: "Lucida Console", "Courier New", monospace;
+
+  color: white;
+
+  background: linear-gradient(
+    90deg,
+    #141824,
+    #0d2235
+  );
+
+  backdrop-filter: blur(10px);
+}
+
+.navbar-logo {
+  margin-right: 50px;
+
+  user-select: none;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* ROUTES */
+
+.navbar-routes {
+  display: flex;
+  gap: 30px;
+
+  list-style: none;
+}
+
+.navbar-routes button {
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  color: white;
+
+  font-family: inherit;
+}
+
+/* ACTIVE BUTTON */
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+/* TOGGLE BUTTON */
+
+.menu-toggle {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* LINKS */
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    justify-content: space-between;
+
+    height: auto;
+
+    padding: 1rem 1.5rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-routes {
+    position: absolute;
+
+    top: 70px;
+    right: 20px;
+
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    border-radius: 12px;
+
+    background: rgba(15, 23, 42, 0.95);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .navbar-routes.open {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+}
