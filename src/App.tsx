@@ -1,6 +1,9 @@
 import NavBar from './components/Navbar/navbar'
 import HomePage from './components/HomePage/home'
 import AboutPage from './components/AboutPage/about'
+import WorkPage from './components/WorkPage/work'
+import TechPage from './components/TechPage/tech'
+import Footer from './components/Footer/footer'
 import { useState } from "react";
 
 function App() {
@@ -13,11 +16,14 @@ function App() {
         <>
         <HomePage/>
         <AboutPage/>
+        <WorkPage/>
+        <TechPage/>
         </>
       )}
         {activeSection === "about" && <AboutPage />}
-        {/* {activeSection === "work" && <Work />}
-        {activeSection === "tech" && <Tech />} */}
+        {activeSection === "work" && <WorkPage />}
+        {activeSection === "tech" && <TechPage />}
+      <Footer/>
     </>
   )
 }

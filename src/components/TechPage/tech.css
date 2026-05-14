@@ -1,4 +1,4 @@
-.home {
+.tech {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   font-family: "JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace";
 }
 
-.home-top {
+.tech-top {
   width: 100%;
   text-align: center;
 }
