@@ -19,6 +19,8 @@
     #0d2235
   );
 
+  background: rgba(255, 255, 255, 0);
+
   backdrop-filter: blur(10px);
 }
 
