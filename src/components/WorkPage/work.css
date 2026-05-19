@@ -1,0 +1,168 @@
+.work-section {
+  width: 100%;
+
+  padding: 100px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #0f1117;
+}
+
+.work-heading {
+  width: 80%;
+  max-width: 1400px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.work-heading h1 {
+  color: white;
+
+  font-size: 3rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.work-holder {
+  width: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+  align-items: center;
+}
+
+.work-tab {
+  width: 70%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+
+  padding: 40px;
+
+  border-radius: 24px;
+
+  background: #1a1d16;
+
+  border: 1px solid #2b3227;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.work-tab:hover {
+  border-color: #3d4b35;
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.35);
+}
+
+.work-info {
+  flex: 1;
+  color: white;
+}
+
+.work-info h2 {
+  font-size: 2rem;
+
+  margin-bottom: 18px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.work-summary {
+  color: #b5b5b5;
+
+  line-height: 1.7;
+
+  max-width: 550px;
+
+  margin-bottom: 25px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+}
+.tech-stack span {
+  padding: 8px 14px;
+
+  background: #252a21;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #3b4335;
+  
+  font-size: 0.9rem;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+.tech-stack span:hover {
+  border-color: #7cffb2;
+}
+
+.work-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.work-buttons button {
+  padding: 12px 20px;
+
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  color: white;
+  font-weight: 600;
+
+  background:
+    linear-gradient(#1a1d16, #1a1d16) padding-box,
+    linear-gradient(135deg, #00f5ff, #7cffb2) border-box;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.work-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.work-img {
+  display: flex;
+  gap: 6px;
+}
+
+.work-img img {
+  width: 230px;
+  height: 230px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.work-img img:hover {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.35);
+}

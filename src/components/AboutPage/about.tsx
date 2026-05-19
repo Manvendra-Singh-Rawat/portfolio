@@ -3,9 +3,9 @@ import "./about.css";
 export default function AboutPage() {
   return (
     <>
-      <section className="section">
-        <h1>About</h1>
-      </section>
+      <div className="about-section">
+        <div className="about-heading">About Me</div>
+      </div>
     </>
   );
 }
