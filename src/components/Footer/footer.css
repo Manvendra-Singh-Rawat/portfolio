@@ -2,8 +2,8 @@
     word-wrap: normal;
     position: fixed;
     bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     font-size: 14px;
     background: linear-gradient(
@@ -13,4 +13,8 @@
     );
     color: cyan;
     text-align: center;
+
+    font-family: "JetBrains Mono", "ui-monospace", "SFMono-Regular",
+    "Menlo", "Monaco", "Consolas", "Liberation Mono",
+    "Courier New", "monospace";
 }

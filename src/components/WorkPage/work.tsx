@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <>
       <div className="work-section">
-        <div className="work-heading"><h1>Have a look at my work</h1></div>
+        <div className="work-heading"><h1>Things I've Built</h1></div>
 
         <div className="work-holder">
 
